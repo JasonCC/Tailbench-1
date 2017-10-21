@@ -1,0 +1,164 @@
+
+Checking JVM
+
+1st bounds test:	OK
+Super: Class Super, public=34, protected=33, private=32
+Sub: Class Super, public=804, protected=803, private=802
+Super: prot=33, priv=32
+Sub:  prot=111, priv=105
+Subclass test OK
+XML StrictErrorChecking test: OK
+1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 
+1 1 2 3 5 8 666 666 13 13 21 21 
+2nd bounds test:	OK
+testIf:     OK
+testArray:  OK
+testBitOps: OK
+testFor:    OK
+testDiv:    OK
+testTableSwitch:  OK
+testLookupSwitch: OK
+testHiddenField:  OK
+checkRemainders:  long double OK
+checkMathFcts: OK
+Primes less than 50: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 
+testExc1(simple throw/catch):  OK
+testExc2(skip catch clauses):  OK
+testExc3(catch in inner):      OK
+testExc4(catch in outer):      OK
+testExc5(rethrow):             OK
+testExc6(throw accross call):  OK
+testExc7(throw accr. 2 calls): OK
+loopExitContinueInExceptionHandler: OK
+testStringHash:  OK
+testClone:       OK
+testObjectArray: OK
+checkInstanceOf: OK
+checkInterfaceInstanceOf: OK
+testWaitNull: OK
+testVarAndMethodNameClash: OK
+testMisk: OK
+testGC: OK
+testRandom : OK
+PepTest: OK
+
+JVM Check OK
+Constructing the company now   Hang....on
+
+Loading Warehouse 1...
+
+
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 7 should be:  |     1    12117   rk9rIQP9q52FiN4FWuihzNT    5     61    G    $61.73   $308.65 |
+    Line 7 is:  |     1    12117   rk9rIQP9q52FiN4FWuihzNT    5     59    G    $61.73   $308.65 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 8 should be:  |     1    19072   0VOgv21kW1ZS3pv1IzirxrmH   5     91    G    $26.62   $133.10 |
+    Line 8 is:  |     1    19072   0VOgv21kW1ZS3pv1IzirxrmH   5     79    G    $26.62   $133.10 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 9 should be:  |     1     4260   clRd7h9zm9eGwqtvKblk1q     5     81    G    $85.08   $425.40 |
+    Line 9 is:  |     1     4260   clRd7h9zm9eGwqtvKblk1q     5     53    G    $85.08   $425.40 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 10 should be:  |     1     5772   b96nAb1I7qPaOA             5     85    G    $50.24   $251.20 |
+    Line 10 is:  |     1     5772   b96nAb1I7qPaOA             5     73    G    $50.24   $251.20 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 12 should be:  |     1     2790   yrZXzgfPRKxNQW             5     96    G    $33.70   $168.50 |
+    Line 12 is:  |     1     2790   yrZXzgfPRKxNQW             5     71    G    $33.70   $168.50 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 13 should be:  |     1      687   G1GcZl0h1P7gJ4GxZhnuT      5     88    G    $46.26   $231.30 |
+    Line 13 is:  |     1      687   G1GcZl0h1P7gJ4GxZhnuT      5     57    G    $46.26   $231.30 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 14 should be:  |     1     5258   b9PfVfw5TcKQe0iEZaPEWkt    5     57    G    $45.62   $228.10 |
+    Line 14 is:  |     1     5258   b9PfVfw5TcKQe0iEZaPEWkt    5     14    G    $45.62   $228.10 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 15 should be:  |     1    12238   w0Tu7bleXb7XXY03           5     42    G    $70.20   $351.00 |
+    Line 15 is:  |     1    12238   w0Tu7bleXb7XXY03           5     33    G    $70.20   $351.00 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 16 should be:  |     1     4933   TvoMqL3eITHLzearKdECH      5     41    G    $93.19   $465.95 |
+    Line 16 is:  |     1     4933   TvoMqL3eITHLzearKdECH      5     89    G    $93.19   $465.95 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 17 should be:  |     1     4186   LNDK2oajzLA29ICevp8eBx     5     76    G    $49.22   $246.10 |
+    Line 17 is:  |     1     4186   LNDK2oajzLA29ICevp8eBx     5     34    G    $49.22   $246.10 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 19 should be:  |     1     9925   Vh0KacEuowjiT8ey           5     30    G    $72.28   $361.40 |
+    Line 19 is:  |     1     9925   Vh0KacEuowjiT8ey           5     10    G    $72.28   $361.40 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 20 should be:  |     1    12042   m7ryJMNGNEaOaKEG           5     90    G    $65.31   $326.55 |
+    Line 20 is:  |     1    12042   m7ryJMNGNEaOaKEG           5     19    G    $65.31   $326.55 |
+Oct 21, 2017 1:41:55 PM spec.jbb.NewOrderTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for NewOrderTransaction
+    Line 21 should be:  |     1     9471   hAdDzcbhMhlOQTUecrfFCym    5     78    G    $68.54   $342.70 |
+    Line 21 is:  |     1     9471   hAdDzcbhMhlOQTUecrfFCym    5    100    G    $68.54   $342.70 |
+Oct 21, 2017 1:41:55 PM spec.jbb.StockLevelTransaction processTransactionLog
+WARNING: VALIDATION ERROR:  incorrect output for StockLevelTransaction
+    Line 6 should be:  |low stock:  14|
+    Line 6 is:  |low stock:  15|
+
+Loading properties from SPECjbb_mt.props
+
+Input Properties:
+  per_jvm_warehouse_rampup = 3.0
+  per_jvm_warehouse_rampdown = 20.0
+  jvm_instances = 1
+  deterministic_random_seed = true
+  ramp_up_seconds = 10
+  measurement_seconds = 1000000000
+  sequence_of_number_of_warehouses =  4  expected_peak_warehouse = 4
+
+The results will be in: results/SPECjbbSingleJVM/SPECjbb.001.raw
+Opened results/SPECjbbSingleJVM/SPECjbb.001.results
+Opened results/SPECjbbSingleJVM/SPECjbb.001.raw
+
+Licensed Materials - Property of SPEC
+SPECjbb2005
+Copyright (c) 2005 Standard Performance Evaluation Corporation (SPEC),All rights reserved,
+
+Benchmark SPECjbb2005 1.04 now Opening
+
+jar validity is false
+
+
+Checking whether run will be valid
+INVALID:  deterministic_random_seed = true, must be false
+INVALID:  ramp_up_seconds = 10, must be 30
+INVALID:  measurement_seconds = 1000000000, must be 240
+
+INVALID:  Run will NOT be compliant
+
+Constructing the company now   Hang....on
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Loading Warehouse 1...
+
+
+Loading Warehouse 2...
+
+
+Loading Warehouse 3...
+
+
+Loading Warehouse 4...
+
+
+Start User Threads
+TBENCH_MAXREQS = 25000
+TBENCH_WARMUPREQS = 25000
+TBENCH_MINSLEEPNS = 10000
+TBENCH_RANDSEED =   started user thread for Warehouse 1
+  started user thread for Warehouse 2
+  started user thread for Warehouse 3
+  started user thread for Warehouse 4
+Timing Measurement began Sat Oct 21 13:41:55 CDT 2017 for 16666666.67 minutes

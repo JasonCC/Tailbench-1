@@ -1,0 +1,75 @@
+Database Benchmark:
+  pid: 3361
+settings:
+  par-loading : 0
+  pin-cpus    : 0
+  slow-exit   : 0
+  retry-txns  : 1
+  backoff-txns: 0
+  bench       : tpcc
+  scale       : 1
+  num-cpus    : 32
+  num-threads : 1
+  db-type     : ndb-proto2
+  basedir     : /home/alberto6/tailbench/tailbench-v0.9/silo
+  txn-flags   : 0
+  ops/worker  : 10000000
+  var-encode  : yes
+  allocator   : jemalloc
+  numa-memory : disabled
+  logfiles : []
+  assignments : []
+  disable-gc : 0
+  disable-snapshots : 0
+  stats-server-sockfile: 
+system properties:
+  btree_internal_node_size: 264
+  btree_leaf_node_size    : 312
+  tuple_prefetch          : no
+  btree_node_prefetch     : yes
+tpcc settings:
+  cross_partition_transactions : 1
+  read_only_snapshots          : 1
+  partition_locks              : 0
+  separate_tree_per_partition  : 0
+  new_order_remote_item_pct    : 1
+  new_order_fast_id_gen        : 0
+  uniform_item_dist            : 0
+  order_status_scan_hack       : 0
+  workload_mix                 : [45, 43, 4, 4, 4]
+TBENCH_MAXREQS = 20000
+TBENCH_WARMUPREQS = 20000
+TBENCH_MINSLEEPNS = 10000
+TBENCH_RANDSEED = num batches: 30
+[INFO] finished loading warehouse
+[INFO]   * average warehouse record length: [INFO] finished loading district
+[INFO]   * average district record length: 97 bytes
+99 bytes
+[INFO] finished loading order
+[INFO]   * average order_line record length: 10.9193 bytes
+[INFO]   * average oorder record length: 7.4286 bytes
+[INFO]   * average new_order record length: 12 bytes
+[INFO] finished loading item
+[INFO]   * average item record length: 84.1739 bytes
+[INFO] finished loading customer
+[INFO]   * average customer record length: 656.725 bytes 
+[INFO] finished loading stock
+[INFO]   * average stock record length: 8 bytes
+timed region dataloading took 785.719 ms
+DB size: 186.395 MB
+wait_an_epoch(): consistent reads happening in e-1, but e=0 so special case
+[0, 0, 0] txns persisted in loading phase
+table customer_0 size 30000
+table customer_name_idx_0 size 30000
+table district_0 size 10
+table history_0 size 30000
+table item_0 size 100000
+table new_order_0 size 9000
+table oorder_0 size 30000
+table oorder_c_id_idx_0 size 30000
+table order_line_0 size 299560
+table stock_0 size 100000
+table stock_data_0 size 100000
+table warehouse_0 size 1
+starting benchmark...
+tpcc: worker id 32 => warehouses [1, 2)

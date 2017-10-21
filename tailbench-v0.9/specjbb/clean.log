@@ -1,0 +1,7 @@
+Buildfile: /home/alberto6/tailbench/tailbench-v0.9/specjbb/build.xml
+
+clean:
+   [delete] Deleting directory /home/alberto6/tailbench/tailbench-v0.9/specjbb/build
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

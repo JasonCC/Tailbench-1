@@ -1,0 +1,11 @@
+./bin
+Creating lexical reordering...
+weights: 0.000 0.000 0.000 0.000 0.000 0.000 
+binary file loaded, default OFF_T: -1
+TBENCH_MAXREQS = 500
+TBENCH_WARMUPREQS = 500
+TBENCH_MINSLEEPNS = 10000
+TBENCH_RANDSEED = reading bin ttable
+size of OFF_T 8
+binary phrasefile loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1

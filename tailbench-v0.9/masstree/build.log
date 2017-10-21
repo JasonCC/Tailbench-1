@@ -1,0 +1,221 @@
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking numa.h usability... yes
+checking numa.h presence... yes
+checking for numa.h... yes
+checking for library containing numa_available... -lnuma
+checking for __builtin_clz builtin... yes
+checking for __builtin_clzl builtin... yes
+checking for __builtin_clzll builtin... yes
+checking for __builtin_ctz builtin... yes
+checking for __builtin_ctzl builtin... yes
+checking for __builtin_ctzll builtin... yes
+checking for __sync_synchronize builtin... yes
+checking for __sync_fetch_and_add builtin... yes
+checking for __sync_add_and_fetch builtin... yes
+checking for __sync_fetch_and_add_8 builtin... yes
+checking for __sync_add_and_fetch_8 builtin... yes
+checking for __sync_fetch_and_or builtin... yes
+checking for __sync_or_and_fetch builtin... yes
+checking for __sync_fetch_and_or_8 builtin... yes
+checking for __sync_or_and_fetch_8 builtin... yes
+checking for __sync_bool_compare_and_swap builtin... yes
+checking for __sync_bool_compare_and_swap_8 builtin... yes
+checking for __sync_val_compare_and_swap builtin... yes
+checking for __sync_val_compare_and_swap_8 builtin... yes
+checking for __sync_lock_test_and_set builtin... yes
+checking for __sync_lock_test_and_set_val builtin... yes
+checking for __sync_lock_release_set builtin... yes
+checking whether the C++ compiler understands 'auto'... no
+checking whether the C++ compiler with -std=gnu++0x understands 'auto'... yes
+checking whether the C++ compiler understands constexpr... yes
+checking whether the C++ compiler understands static_assert... yes
+checking whether the C++ compiler understands rvalue references... yes
+checking whether the C++ compiler understands template alias... yes
+checking type_traits usability... yes
+checking type_traits presence... no
+configure: WARNING: type_traits: accepted by the compiler, rejected by the preprocessor!
+configure: WARNING: type_traits: proceeding with the compiler's result
+checking for type_traits... yes
+checking for __has_trivial_copy... yes
+checking for std::move... yes
+checking for std::is_trivially_copyable... yes
+checking for std::is_rvalue_reference... yes
+checking for malloc in -lflow... no
+checking for mallctl in -ljemalloc... yes
+checking for tc_malloc in -ltcmalloc_minimal... yes
+checking for malloc library... jemalloc
+checking whether off_t and long are the same type... yes
+checking whether off_t and long long are the same type... no
+checking whether int64_t and long are the same type... yes
+checking whether int64_t and long long are the same type... no
+checking whether size_t and unsigned are the same type... no
+checking whether size_t and unsigned long are the same type... yes
+checking whether size_t and unsigned long long are the same type... no
+checking for long long... yes
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of void *... 8
+checking whether getline is declared... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking whether clock_gettime is declared... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+configure: creating ./config.status
+config.status: creating GNUmakefile
+config.status: creating config.h
+config.status: config.h is unchanged
+CONFIG_FILES= /bin/sh ./config.status
+mkdir -p .deps
+touch .deps/stamp
+config.status: creating config.h
+config.status: config.h is unchanged
+echo > stamp-h
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/test_atomics.d -MP -include config.h -c -o test_atomics.o test_atomics.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/string.d -MP -include config.h -c -o string.o string.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/straccum.d -MP -include config.h -c -o straccum.o straccum.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/kvrandom.d -MP -include config.h -c -o kvrandom.o kvrandom.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/json.d -MP -include config.h -c -o json.o json.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/compiler.d -MP -include config.h -c -o compiler.o compiler.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/kvio.d -MP -include config.h -c -o kvio.o kvio.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/mtd.d -MP -include config.h -c -o mtd.o mtd.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/log.d -MP -include config.h -c -o log.o log.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/checkpoint.d -MP -include config.h -c -o checkpoint.o checkpoint.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/file.d -MP -include config.h -c -o file.o file.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/misc.d -MP -include config.h -c -o misc.o misc.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/masstree.d -MP -include config.h -c -o masstree.o masstree.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/value_string.d -MP -include config.h -c -o value_string.o value_string.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/value_array.d -MP -include config.h -c -o value_array.o value_array.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/value_versioned_array.d -MP -include config.h -c -o value_versioned_array.o value_versioned_array.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/perfstat.d -MP -include config.h -c -o perfstat.o perfstat.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/string_slice.d -MP -include config.h -c -o string_slice.o string_slice.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/hashallocator.d -MP -include config.h -c -o hashallocator.o hashallocator.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/clp.d -MP -include config.h -c -o clp.o clp.c
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/kvthread.d -MP -include config.h -c -o kvthread.o kvthread.cc
+misc.cc: In member function ‘void threadinfo::refill_aligned_arena(int)’:
+misc.cc:27:32: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     void *first = (void *)iceil((uintptr_t)page, (uintptr_t)unit);
+                                ^
+misc.cc:85:15: note: ‘x’ was declared here
+         void *x;
+               ^
+json.cc: In member function ‘void Json::hard_unparse(StringAccum&, const Json::unparse_manipulator&, int) const’:
+json.cc:573:28: warning: ‘upx’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+                 sa << upx[1];
+                            ^
+json.cc:579:2: warning: ‘expanded’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (expanded)
+  ^
+test_atomics.cc: In function ‘void test_atomics()’:
+test_atomics.cc:58:14: warning: variable ‘x’ set but not used [-Wunused-but-set-variable]
+     uint32_t x;
+              ^
+test_atomics.cc: In function ‘void test_psdes_nr()’:
+test_atomics.cc:88:7: warning: variable ‘u’ set but not used [-Wunused-but-set-variable]
+     } u;
+       ^
+test_atomics.cc: In function ‘void test_kpermuter()’:
+test_atomics.cc:130:9: warning: variable ‘i’ set but not used [-Wunused-but-set-variable]
+     int i = k.insert_from_back(0);
+         ^
+test_atomics.cc: In function ‘void test_string_slice()’:
+test_atomics.cc:180:36: warning: typedef ‘ss_type’ locally defined but not used [-Wunused-local-typedefs]
+     typedef string_slice<uint32_t> ss_type;
+                                    ^
+test_atomics.cc: In function ‘void test_json()’:
+test_atomics.cc:391:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+test_atomics.cc:392:7: warning: unused variable ‘b’ [-Wunused-variable]
+  bool b = false;
+       ^
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/str.d -MP -include config.h -c -o str.o str.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/mtclient.d -MP -include config.h -c -o mtclient.o mtclient.cc
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/mttest.d -MP -include config.h -c -o mttest.o mttest.cc
+masstree.cc: In instantiation of ‘void Masstree::query_table<P>::checkpoint_restore(Str, Str, kvtimestamp_t, threadinfo*) [with P = Masstree::default_query_table_params; kvtimestamp_t = long unsigned int]’:
+masstree.cc:527:16:   required from here
+masstree.cc:174:10: warning: unused variable ‘found’ [-Wunused-variable]
+     bool found = lp.find_insert(ti);
+          ^
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -MD -MF .deps/kvclient.d -MP -include config.h -c -o kvclient.o kvclient.cc
+masstree.cc: In instantiation of ‘void Masstree::leaf<P>::hard_assign_ksuf(int, Str, bool, threadinfo*) [with P = Masstree::default_query_table_params]’:
+masstree_struct.hh:379:22:   required from ‘void Masstree::leaf<P>::assign_ksuf(int, Str, bool, threadinfo*) [with P = Masstree::default_query_table_params]’
+masstree_struct.hh:366:17:   required from ‘void Masstree::leaf<P>::assign_initialize(int, const key_type&, threadinfo*) [with P = Masstree::default_query_table_params; Masstree::leaf<P>::key_type = Masstree::key<long unsigned int>; typename P::ikey_type = long unsigned int]’
+masstree_insert.hh:48:2:   required from ‘Masstree::node_base<P>* Masstree::tcursor<P>::check_leaf_insert(Masstree::tcursor<P>::node_type*, Masstree::tcursor<P>::nodeversion_type, threadinfo*) [with P = Masstree::default_query_table_params; Masstree::tcursor<P>::node_type = Masstree::node_base<Masstree::default_query_table_params>; Masstree::tcursor<P>::nodeversion_type = basic_nodeversion<nodeversion32_parameters>]’
+masstree_insert.hh:130:26:   required from ‘bool Masstree::tcursor<P>::find_insert(threadinfo*) [with P = Masstree::default_query_table_params]’
+masstree.cc:120:35:   required from ‘result_t Masstree::query_table<P>::put(query<value_bag<short unsigned int> >&, threadinfo*) [with P = Masstree::default_query_table_params]’
+masstree.cc:527:16:   required from here
+masstree.cc:82:11: warning: unused variable ‘ok’ [-Wunused-variable]
+      bool ok = nksuf->assign(mp, ksuf(mp));
+           ^
+masstree.cc:86:10: warning: unused variable ‘ok’ [-Wunused-variable]
+     bool ok = nksuf->assign(p, s);
+          ^
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o mttest_client_networked ../harness/client.o ../harness/tbench_client_networked.o kvclient.o -ljemalloc  -lnuma  -lpthread -lm -lrt
+ar cru libjson.a json.o string.o straccum.o hashallocator.o clp.o kvrandom.o compiler.o kvthread.o str.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o test_atomics test_atomics.o string.o straccum.o kvrandom.o json.o compiler.o kvio.o -ljemalloc  -lnuma  -lpthread -lm -lrt
+mttest.cc: In instantiation of ‘void test_thread<T>::run(const String&) [with T = Masstree::query_table<Masstree::default_query_table_params>]’:
+mttest.cc:580:6:   required from ‘static void* test_thread<T>::go(void*) [with T = Masstree::query_table<Masstree::default_query_table_params>]’
+mttest.cc:704:57:   required from here
+mttest.cc:615:28: warning: unused parameter ‘test’ [-Wunused-parameter]
+     void run(const String &test) {
+                            ^
+In file included from mttest.cc:56:0:
+kvtest.hh: In instantiation of ‘void kvtest_mycsba(S&) [with S = kvtest_server<Masstree::query_table<Masstree::default_query_table_params> >]’:
+mttest.cc:619:22:   required from ‘void test_thread<T>::run(const String&) [with T = Masstree::query_table<Masstree::default_query_table_params>]’
+mttest.cc:580:6:   required from ‘static void* test_thread<T>::go(void*) [with T = Masstree::query_table<Masstree::default_query_table_params>]’
+mttest.cc:704:57:   required from here
+kvtest.hh:1593:16: warning: unused variable ‘len’ [-Wunused-variable]
+         size_t len = tBenchRecvReq(reinterpret_cast<void**>(&req));
+                ^
+In file included from kvtest.hh:21:0,
+                 from mtd.cc:50:
+mttest.hh:27:13: warning: ‘void genKeyVal(kvrandom_lcg_nr&, char*, char*)’ defined but not used [-Wunused-function]
+ static void genKeyVal(kvrandom_lcg_nr& rand, char* key, char* val) {
+             ^
+In file included from kvtest.hh:21:0,
+                 from mttest.cc:56:
+mttest.hh:27:13: warning: ‘void genKeyVal(kvrandom_lcg_nr&, char*, char*)’ defined but not used [-Wunused-function]
+ static void genKeyVal(kvrandom_lcg_nr& rand, char* key, char* val) {
+             ^
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o mtd mtd.o log.o checkpoint.o file.o misc.o masstree.o value_string.o value_array.o value_versioned_array.o perfstat.o string_slice.o kvio.o libjson.a -ljemalloc  -lnuma  -lpthread -lm -lrt
+In file included from kvtest.hh:21:0,
+                 from mtclient.cc:45:
+mttest.hh:27:13: warning: ‘void genKeyVal(kvrandom_lcg_nr&, char*, char*)’ defined but not used [-Wunused-function]
+ static void genKeyVal(kvrandom_lcg_nr& rand, char* key, char* val) {
+             ^
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o mttest_integrated ../harness/client.o ../harness/tbench_server_integrated.o mttest.o kvclient.o misc.o checkpoint.o masstree.o value_string.o value_array.o value_versioned_array.o perfstat.o string_slice.o kvio.o libjson.a -ljemalloc  -lnuma  -lpthread -lm -lrt
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o mttest_server_networked ../harness/tbench_server_networked.o mttest.o misc.o checkpoint.o masstree.o value_string.o value_array.o value_versioned_array.o perfstat.o string_slice.o kvio.o libjson.a -ljemalloc  -lnuma  -lpthread -lm -lrt
+g++ -std=gnu++0x -g -W -Wall -O2 -I../harness -o mtclient mtclient.o misc.o kvio.o libjson.a  -lnuma  -lpthread -lm -lrt
