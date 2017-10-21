@@ -1,0 +1,35 @@
+# Tailbench
+This repository contains the benchmark [TailBench](http://tailbench.csail.mit.edu/) developed by MIT which minor changes to be executed in a concrete platform.
+## Platform
+This software has been tested in Ubuntu 16.04
+## Changes
+The file "Changes.md" describes the changes which have been done.
+## Build
+### Download software
+```
+$ git clone https://github.com/albert17/Tailbench
+$ cd TailBench
+```
+### Download dataset
+```
+$ wget http://tailbench.csail.mit.edu/tailbench.inputs.tgz
+$ tar xzvf tailbench-v0.9.tgz
+```
+### Crate results dir
+```
+$ mkdir scratch
+```
+### Install dependencies
+```
+$ sudo apt-get install openjdk-8-jdk libopencv-dev autoconf ant libtcmalloc-minimal4 swig google-perftools libboost1.58-all-dev bzip2 libnuma-dev libjemalloc-dev libgoogle-perftools-dev libdb5.3++-dev libmysqld-dev libaio-dev uuid-dev libbz2-dev python-numpy python-scipy libgtop2-dev
+```
+### Compile
+```
+$ cd tailbench-v0.9
+$ ./build.sh
+```
+## Run
+```
+$ sudo bash
+$ ./build.sh
+```         
